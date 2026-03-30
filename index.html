@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prestige | Luxury Catering</title>
+    <!-- Google Fonts: Inter and Outfit for ultra-modern look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@200;300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Cursor Follower (Modern detail) -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-brand">
+            <a href="#" class="logo">
+                <span class="logo-text magnetic-element" data-strength="15">Prestige</span>
+            </a>
+        </div>
+        <div class="nav-menu">
+            <ul class="nav-links">
+                <li><a href="#about" class="magnetic-element" data-strength="20">Nosotros</a></li>
+                <li><a href="#services" class="magnetic-element" data-strength="20">Servicios</a></li>
+                <li><a href="#menu" class="magnetic-element" data-strength="20">Menú</a></li>
+                <li><a href="#gallery" class="magnetic-element" data-strength="20">Galería</a></li>
+                <li><a href="#process" class="magnetic-element" data-strength="20">Proceso</a></li>
+                <li><a href="#faq" class="magnetic-element" data-strength="20">Dudas</a></li>
+            </ul>
+        </div>
+        <div class="nav-cta">
+            <a href="#contact" class="btn btn-glass magnetic-element hide-mobile" data-strength="30">Cotizar</a>
+            <button class="mobile-toggle" aria-label="Toggle Menu">
+                <div class="line"></div>
+                <div class="line"></div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Header Overlay (creates a cinematic dark frame) -->
+    <div class="cinematic-overlay top"></div>
+    <div class="cinematic-overlay bottom"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Parallax BG -->
+        <div class="hero-bg parallax-img" data-speed="0.5" style="background-image: url('https://images.unsplash.com/photo-1540541338287-41700207dee6?ixlib=rb-4.0.3&auto=format&fit=crop&w=2000&q=80');"></div>
+        <div class="hero-noise"></div>
+        <div class="hero-gradient"></div>
+        
+        <div class="hero-content">
+            <div class="hero-badge reveal-up">
+                <span>✦</span> Eventos de Alta Gama
+            </div>
+            <h1 class="hero-title reveal-text" data-3d="true">PRESTIGE</h1>
+            <h1 class="hero-title outline-text reveal-text delay-1" data-3d="true">CATERING & EVENTS</h1>
+            <p class="hero-subtitle reveal-up delay-2">Creamos experiencias y servimos perfección.</p>
+            <div class="hero-actions reveal-up delay-3">
+                <!-- Using an SVG arrow for the button -->
+                <a href="#about" class="btn btn-pill scroll-down magnetic-element" data-strength="30">
+                    Explorar
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" opacity="0.8">
+                        <path d="M12 4V20M12 20L6 14M12 20L18 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="https://www.google.com/maps/search/?api=1&query=JW+Marriott+Hotel+Santo+Domingo+Lopez+de+Vega+41" target="_blank" class="btn btn-pill-outline magnetic-element" data-strength="30">
+                    Ubicación
+                    <i class="fas fa-location-dot ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container container-large">
+            <div class="about-grid">
+                <div class="about-info">
+                    <span class="eyebrow reveal-up">Nuestra Filosofía</span>
+                    <h2 class="section-title reveal-up">El arte de<br>sorprender.</h2>
+                    <p class="reveal-up delay-1 text-large">Inspirados en la sofisticación de la alta hostelería y la vitalidad tropical, en <strong>Prestige Catering</strong> transformamos la comida en una experiencia sensorial.</p>
+                    <p class="reveal-up delay-2">Diseñamos propuestas inmersivas para clientes que buscan exclusividad y ejecución perfecta.</p>
+                    
+                    <div class="stats reveal-up delay-3">
+                        <div class="stat-item">
+                            <h3>10+</h3>
+                            <span>Años de<br>Excelencia</span>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5★</h3>
+                            <span>Servicio<br>Premium</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dynamic Image Cards -->
+                <div class="about-images">
+                    <div class="img-card card-tall parallax-element" data-speed="-1">
+                        <img src="assets/gallery-1.jpg" alt="Experiencia gourmet">
+                    </div>
+                    <div class="img-card card-wide parallax-element" data-speed="1.2">
+                        <img src="assets/gallery-2.jpg" alt="Mesa de quesos premium">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services (Modern Horizontal Scroll or CSS Grid) -->
+    <section class="services section bg-dark" id="services">
+        <div class="container">
+            <div class="services-header">
+                <h2 class="section-title text-white reveal-up">Experiencias<br><span class="text-silver">a Medida</span></h2>
+                <p class="reveal-up delay-1 text-light">Desde recepciones íntimas hasta bodas de destino masivas. Nos encargamos de todo bajo los más altos estándares.</p>
+            </div>
+            
+            <div class="services-list mt-huge">
+                <div class="service-row reveal-up">
+                    <div class="service-number">01</div>
+                    <div class="service-title"><h3>Bodas de Destino</h3></div>
+                    <div class="service-img-preview">
+                        <img src="assets/gallery-3.jpg" alt="Banquete para Bodas">
+                    </div>
+                    <div class="service-action"><i class="fas fa-arrow-right"></i></div>
+                </div>
+                <div class="service-row reveal-up">
+                    <div class="service-number">02</div>
+                    <div class="service-title"><h3>Eventos Corporativos</h3></div>
+                    <div class="service-img-preview">
+                        <img src="assets/gallery-4.jpg" alt="Mesa de bebidas">
+                    </div>
+                    <div class="service-action"><i class="fas fa-arrow-right"></i></div>
+                </div>
+                <div class="service-row reveal-up border-bottom">
+                    <div class="service-number">03</div>
+                    <div class="service-title"><h3>Alta Coctelería</h3></div>
+                    <div class="service-img-preview">
+                        <img src="assets/gallery-5.jpg" alt="Coctelería premium">
+                    </div>
+                    <div class="service-action"><i class="fas fa-arrow-right"></i></div>
+                </div>
+    </section>
+
+    <!-- Menu Highlights Section -->
+    <section class="menu-highlights section" id="menu">
+        <div class="container">
+            <span class="eyebrow reveal-up">Selección Gourmet</span>
+            <h2 class="section-title reveal-up">Nuestros Imprescindibles</h2>
+            <div class="menu-grid mt-huge">
+                <div class="menu-card reveal-up">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1541014741259-df529411bc0a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Bocadillos de Autor">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Bocadillos de Autor</h3>
+                        <p>Miniaturas gastronómicas que fusionan sabores locales con técnicas francesas.</p>
+                    </div>
+                </div>
+                <div class="menu-card reveal-up delay-1">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Maridaje Premium">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Maridaje Premium</h3>
+                        <p>Selección exclusiva de vinos y coctelería diseñada para cada plato.</p>
+                    </div>
+                </div>
+                <div class="menu-card reveal-up delay-2">
+                    <div class="menu-img">
+                        <img src="https://images.unsplash.com/photo-1551024506-0bccd828d307?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Postres de Diseño">
+                    </div>
+                    <div class="menu-info">
+                        <h3>Postres de Diseño</h3>
+                        <p>Dulces creaciones que son verdaderas obras de arte visuales y gustativas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Marquee (Ultra Modern) -->
+    <section class="gallery section overflow-hidden" id="gallery">
+        <div class="marquee-wrapper reveal-up">
+            <div class="marquee">
+                <!-- Group 1 -->
+                <div class="marquee-group">
+                    <img src="assets/gallery-1.jpg" alt="Prestige Catering Galería">
+                    <img src="assets/gallery-2.jpg" alt="Prestige Catering Galería">
+                    <img src="assets/gallery-3.jpg" alt="Prestige Catering Galería">
+                    <img src="assets/gallery-4.jpg" alt="Prestige Catering Galería">
+                    <img src="assets/gallery-5.jpg" alt="Prestige Catering Galería">
+                </div>
+                <!-- Group 2 (Duplicate for continuous scroll) -->
+                <div class="marquee-group">
+                    <img src="assets/gallery-1.jpg" alt="Prestige Catering Galería">
+                    <img src="assets/gallery-2.jpg" alt="Prestige Catering Galería">
+                    <img src="assets/gallery-3.jpg" alt="Prestige Catering Galería">
+                    <img src="assets/gallery-4.jpg" alt="Prestige Catering Galería">
+                    <img src="assets/gallery-5.jpg" alt="Prestige Catering Galería">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials Section -->
+    <section class="testimonials section bg-dark text-white" id="testimonials">
+        <div class="container">
+            <div class="testimonials-grid">
+                <div class="testimonial-header">
+                    <span class="eyebrow reveal-up">Testimonios</span>
+                    <h2 class="section-title text-white reveal-up">Confianza que<br>nos inspira.</h2>
+                </div>
+                <div class="testimonial-content reveal-up delay-1">
+                    <div class="testimonial-item active">
+                        <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                        <p class="testimonial-text text-large">"No solo fue la comida, fue la puesta en escena. Nuestros invitados quedaron fascinados con el nivel de detalle y la elegancia del servicio. Simplemente impecable."</p>
+                        <div class="testimonial-author">
+                            <span class="author-name">Sofía & Carlos</span>
+                            <span class="author-desc">Boda de Destino, Cap Cana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process section" id="process">
+        <div class="container">
+            <span class="eyebrow reveal-up">Metodología</span>
+            <h2 class="section-title reveal-up">El Camino a la<br>Perfección</h2>
+            
+            <div class="process-list mt-huge">
+                <div class="process-step reveal-up">
+                    <div class="step-num">01</div>
+                    <div class="step-content">
+                        <h3>Descubrimiento</h3>
+                        <p>Nos reunimos para entender tu visión, el estilo del evento y tus preferencias gastronómicas más específicas.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal-up">
+                    <div class="step-num">02</div>
+                    <div class="step-content">
+                        <h3>Propuesta Creativa</h3>
+                        <p>Diseñamos un menú personalizado y un concepto visual único que se adapte perfectamente a tu evento.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal-up">
+                    <div class="step-num">03</div>
+                    <div class="step-content">
+                        <h3>Degustación</h3>
+                        <p>Una experiencia privada donde validamos cada sabor y ajuste para asegurar que todo sea de tu total agrado.</p>
+                    </div>
+                </div>
+                <div class="process-step reveal-up">
+                    <div class="step-num">04</div>
+                    <div class="step-content">
+                        <h3>Ejecución</h3>
+                        <p>Nuestro equipo se encarga de cada detalle logístico para que tú solo disfrutes de tu gran momento.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq section" id="faq">
+        <div class="container">
+            <div class="faq-grid">
+                <div class="faq-info">
+                    <span class="eyebrow reveal-up">Preguntas</span>
+                    <h2 class="section-title reveal-up">Dudas<br>Frecuentes</h2>
+                    <p class="reveal-up delay-1">Todo lo que necesitas saber sobre nuestro servicio exclusivo.</p>
+                </div>
+                <div class="faq-list reveal-up delay-2">
+                    <div class="faq-accordion">
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>¿Con cuánta antelación debo reservar?</h3>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Recomendamos un mínimo de 3 a 6 meses para bodas y 1 mes para eventos corporativos, aunque siempre intentamos adaptarnos a urgencias.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>¿Adaptan los menús para alergias?</h3>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Absolutamente. Contamos con protocolos estrictos para menús celíacos, veganos, intolerantes a la lactosa y cualquier otra restricción alimentaria.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>¿Tienen servicio fuera de la ciudad?</h3>
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Sí, operamos en todo el territorio nacional con un equipo logístico especializado en locaciones remotas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Super Modern Contact / CTA -->
+    <section class="contact section" id="contact">
+        <div class="container container-large contact-box">
+            <div class="contact-box-inner bg-accent reveal-up">
+                <div class="contact-bg-pattern"></div>
+                <div class="contact-content">
+                    <h2 class="text-white">¿Listo para<br>empezar?</h2>
+                    <p class="text-white opacity-80 mt-1">Transformemos tu visión en un evento inolvidable.</p>
+                </div>
+                <div class="contact-form-glass">
+                    <form>
+                        <div class="form-row">
+                            <input type="text" class="input-glass" placeholder="Tu Nombre" required>
+                            <input type="email" class="input-glass" placeholder="Tu Email" required>
+                        </div>
+                        <input type="text" class="input-glass full" placeholder="Fecha & Tipo de Evento">
+                        <textarea class="input-glass full" rows="3" placeholder="Detalles de lo que buscas..."></textarea>
+                        <button class="btn btn-pill-white btn-glow magnetic-element" data-strength="50">
+                            Enviar <i class="fas fa-paper-plane ml-1"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Mega Clean -->
+    <footer class="footer">
+        <div class="container container-large">
+            <div class="footer-grid">
+                <div class="col">
+                    <h3 class="footer-logo">Prestige</h3>
+                    <p>Catering de diseño & experiencias hotel-vibe en cada evento.</p>
+                </div>
+                <div class="col">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>Santo Domingo, López de Vega No.41</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 8px;"></i>eventos@prestigecatering.mx</p>
+                    <p><i class="fas fa-phone" style="margin-right: 8px;"></i>+52 998 123 4567</p>
+                </div>
+                <div class="col">
+                    <h4>Social</h4>
+                    <a href="#" class="social-link"><i class="fab fa-instagram" style="margin-right: 8px;"></i>Instagram</a>
+                    <a href="#" class="social-link"><i class="fab fa-pinterest" style="margin-right: 8px;"></i>Pinterest</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Prestige Catering. All rights reserved.</p>
+                <div class="credits">Designed with ♥</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- GSAP for Butter Smooth Animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="script.js"></script>
+
+    <!-- Floating Instagram Button -->
+    <a href="https://instagram.com/Prestige_Catering11" target="_blank" class="floating-ig-btn">
+        <i class="fab fa-instagram"></i>
+    </a>
+</body>
+</html>
