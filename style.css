@@ -664,6 +664,24 @@ ul {
     overflow: hidden;
 }
 
+.contact-bg-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+    opacity: 0.3;
+}
+
+.contact-bg-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(to right, var(--color-navy), transparent);
+    z-index: 1;
+}
+
 .contact-bg-pattern {
     position: absolute;
     top: 0; right: 0;
@@ -864,6 +882,30 @@ ul {
    ========================================= */
 .testimonials {
     padding: 10rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.testimonials-bg {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.testimonials-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(11, 42, 91, 0.85);
+    z-index: 1;
+}
+
+.testimonials .container {
+    position: relative;
+    z-index: 2;
 }
 
 .testimonials-grid {
@@ -915,10 +957,31 @@ ul {
 
 .process-step {
     padding: 3rem;
-    background: rgba(11, 42, 91, 0.03);
+    background: var(--color-white);
     border-radius: var(--radius-md);
     transition: var(--transition-smooth);
     border: 1px solid rgba(11, 42, 91, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.step-img-box {
+    width: 100%;
+    height: 150px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.step-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s var(--ease-out-expo);
+}
+
+.process-step:hover .step-img-box img {
+    transform: scale(1.1);
 }
 
 .process-step:hover {
